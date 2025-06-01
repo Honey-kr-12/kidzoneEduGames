@@ -7,6 +7,7 @@ import one4 from '../../assets/images1/logo flappy bird.jpg';
 import one5 from '../../assets/images/5.png';
 import one6 from '../../assets/images/6.png';
 import one7 from '../../assets/images/7.png';
+import { Link } from 'react-router-dom';
 
 const ScrollComponent = ({ title }) => {
   const recommendedItems = [
@@ -36,12 +37,14 @@ const ScrollComponent = ({ title }) => {
         {/* <button className="scroll-button left" onClick={() => scroll('left')}>❮</button> */}
         <div className="scrollable-cards" ref={scrollRef}>
           {recommendedItems.map((item) => (
-            <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">
+            // <a key={item.id} href={item.link} target="_blank" rel="noopener noreferrer">
+            <Link to={item.link}>
               <div className="card">
                 <img src={item.image} alt={item.title} />
                 <p>{item.title}</p>
               </div>
-            </a>
+            </Link>
+            // </a>
           ))}
         </div>
         {/* <iframe src="https://kidzone-edugames.itch.io/balloon-buster-math-edition" frameborder="0"></iframe> */}
