@@ -10,10 +10,10 @@ import one7 from '../../assets/images/7.png';
 
 const ScrollComponent = ({ title }) => {
   const recommendedItems = [
-    { id: 1, title: 'Match 3', image: one1, link: 'http://localhost:5173/match3' },
-    { id: 2, title: 'Nodulus', image: one2, link: 'http://localhost:5173/nodulus' },
-    { id: 3, title: 'Runner Ball', image: one3, link: 'http://localhost:5173/runner-ball' },
-    { id: 4, title: 'Flappy Bird', image: one4, link: 'http://localhost:5173/flappy-bird' },
+    { id: 1, title: 'Match 3', image: one1, link: 'https://kidzoneedugames.vercel.app/match3' },
+    { id: 2, title: 'Nodulus', image: one2, link: 'https://kidzoneedugames.vercel.app/nodulus' },
+    { id: 3, title: 'Runner Ball', image: one3, link: 'https://kidzoneedugames.vercel.app/runner-ball' },
+    { id: 4, title: 'Flappy Bird', image: one4, link: 'https://kidzoneedugames.vercel.app/flappy-bird' },
     // { id: 5, title: 'Color Blaster', image: one5, link: 'https://www.linkedin.com' },
     // { id: 6, title: 'Candle Counting', image: one6, link: 'https://www.youtube.com' },
     // { id: 7, title: 'Alphabet Bingo', image: one7, link: 'https://www.reddit.com' },
