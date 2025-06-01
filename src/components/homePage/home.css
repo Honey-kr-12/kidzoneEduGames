@@ -1,0 +1,5 @@
+.responsive-video{
+    width: 100vw;
+overflow: hidden;
+    background-size: cover;
+}

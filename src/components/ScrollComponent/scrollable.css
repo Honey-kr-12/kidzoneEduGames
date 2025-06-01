@@ -1,0 +1,58 @@
+.recommended-container {
+  padding: 20px;
+  background-color: #141414;
+  color: #fff;
+  position: relative;
+}
+
+.scrollable-cards {
+  display: flex;
+  gap: 65px;
+  overflow-x: scroll; /* Enable scrolling */
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+/* Hide scrollbar for Chrome, Edge, and Safari */
+.scrollable-cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-cards {
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer 10+ */
+.scrollable-cards {
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+
+.card {
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}

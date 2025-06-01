@@ -1,0 +1,32 @@
+.game-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .mosquito {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    animation: mosquitoMove 5s infinite linear; /* Apply the animation to mosquito */
+  }
+  
+  @keyframes mosquitoMove {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(100px, 50px);
+    }
+    50% {
+      transform: translate(200px, 0);
+    }
+    75% {
+      transform: translate(300px, 100px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
